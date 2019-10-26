@@ -10,7 +10,7 @@ npm install neko-love.js --save
 ## Example
 
 ```js
-const Base = require("neko-love.js");
+const { Base } = require("neko-love.js");
 
 Base("neko").then((url) => {
     console.log(url); // https://neko-love.xyz/v1/neko/neko-love_314.png
