@@ -43,6 +43,7 @@ Base("endpoint").then((url) => {
 *   waifu
 *   cry
 *   kiss
+*   slap
 
 ### NSFW
 
