@@ -19,10 +19,10 @@ module.exports = (endpoint) => {
                 const parsedData = JSON.parse(rawData);
                 return endpoint === "endpoint" ? parsedData.endpoint : parsedData.url;
             } catch (error) {
-                console.error(e.message);
+                new Error(error.message);
             }
         });
-    }).on("error", (err) => {
-        console.error(err.message);
+    }).on("error", (error) => {
+        new Error(error.message);
     });
 };
