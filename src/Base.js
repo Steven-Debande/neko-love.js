@@ -9,10 +9,11 @@ module.exports = (endpoint) => {
             const data = await wump(endpoint === "endpoint" ? base : `${base}${endpoint}`).send();
             if (data.statusCode !== 200) {
                 reject(new Error(data));
+            } else {
+                resolve(endpoint === "endpoint" ? data.parse().endpoint : data.parse().url);
             }
-            resolve(endpoint === "endpoint" ? data.parse().endpoint : data.parse().url);
         } catch (error) {
             reject(new Error(error));
         }
     });
-}
+};
