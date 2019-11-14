@@ -1,17 +1,28 @@
 "use strict";
 
-const wump = require("wumpfetch");
+const { get } = require("https");
 const base = "https://neko-love.xyz/api/v1/";
 
-module.exports = async (endpoint) => {
-    try {
-        const data = await wump(endpoint === "endpoint" ? base : `${base}${endpoint}`).send();
-        if (data.statusCode !== 200) {
-            return new Error(data);
-        } else {
-            return endpoint === "endpoint" ? data.parse().endpoint : data.parse().url;
+module.exports = (endpoint) => {
+    get(endpoint === "endpoint" ? base : `${base}${endpoint}`, (res) => {
+        const { statusCode } = res;
+        if (statusCode !== 200) {
+            res.resume;
         }
-    } catch (error) {
-        return new Error(error);
-    }
+        res.setEncoding("utf8");
+        let rawData = "";
+        res.on("data", (chunk) => {
+            rawData += chunk;
+        });
+        res.on("end", () => {
+            try {
+                const parsedData = JSON.parse(rawData);
+                return endpoint === "endpoint" ? parsedData.endpoint : parsedData.url;
+            } catch (error) {
+                console.error(e.message);
+            }
+        });
+    }).on("error", (err) => {
+        console.error(err.message);
+    });
 };
