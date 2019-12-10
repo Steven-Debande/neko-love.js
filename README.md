@@ -6,6 +6,8 @@ Official module of the Neko-Love API
 [![install size](https://packagephobia.now.sh/badge?p=neko-love.js)](https://packagephobia.now.sh/result?p=neko-love.js)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/dc36a8e4e6b5476d914baadba9e36714)](https://www.codacy.com/manual/Steven-Debande/neko-love.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Steven-Debande/neko-love.js&amp;utm_campaign=Badge_Grade)
 
+[![NPM](https://nodei.co/npm/neko-love.js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/neko-love.js/)
+
 ## Installation
 
 ```
