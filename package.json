@@ -1,6 +1,6 @@
 {
   "name": "neko-love.js",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Official module of the Neko-Love API",
   "main": "index.js",
   "scripts": {
@@ -11,9 +11,7 @@
     "url": "git+https://github.com/Steven-Debande/neko-love.js.git"
   },
   "keywords": [
-    "api",
-    "image",
-    "nodejs",
+    "neko",
     "neko-love"
   ],
   "author": "Steven Debande",
@@ -21,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/Steven-Debande/neko-love.js/issues"
   },
-  "homepage": "https://github.com/Steven-Debande/neko-love.js#readme",
-  "dependencies": {
-    "wumpfetch": "^0.3.1"
-  }
+  "homepage": "https://github.com/Steven-Debande/neko-love.js#readme"
 }
