@@ -5,14 +5,14 @@ const base = "https://neko-love.xyz/api/v1/";
 
 module.exports = async (endpoint) => {
     if (!endpoint) {
-        return console.log(`Error endpoint invalid`);
+        return console.log("Error endpoint invalid");
     }
     const type = endpoint === "endpoint" ? true : false;
     const url = new URL(endpoint === "endpoint" ? base : `${base}${endpoint}`);
     try {
         await getContext(url.toString(), type);
     } catch (error) {
-        console.log(`Error ${error.message}`);
+        console.log(error.message);
     }
 };
 
