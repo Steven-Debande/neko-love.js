@@ -1,41 +1,39 @@
-## Neko-Love.js
-Official module of the Neko-Love API
-
 [![npm](https://img.shields.io/npm/v/neko-love.js.svg)](https://www.npmjs.com/package/neko-love.js)
 [![npm](https://img.shields.io/npm/dt/neko-love.js.svg?maxAge=3600)](https://www.npmjs.com/package/neko-love.js)
 [![install size](https://packagephobia.now.sh/badge?p=neko-love.js)](https://packagephobia.now.sh/result?p=neko-love.js)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/dc36a8e4e6b5476d914baadba9e36714)](https://www.codacy.com/manual/Steven-Debande/neko-love.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Steven-Debande/neko-love.js&amp;utm_campaign=Badge_Grade)
 
+ 
 [![NPM](https://nodei.co/npm/neko-love.js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/neko-love.js/)
 
-## Installation
 
+# Neko-love.JS
+Official module of the Neko-Love API
+
+## Installation
 ```
 npm install neko-love.js --save
 ```
 
 ## Example
 
+Await/Async example
 ```js
-const { Base } = require("neko-love.js");
+const Neko = require('neko-love.js');
 
-Base("neko").then((url) => {
+async function test() {
+  console.log(await Neko("neko")); // https://neko-love.xyz/v1/neko/neko-love_314.png
+}
+test();
+
+
+```
+
+Promise example
+```js
+const Neko = require("neko-love.js");
+
+Neko("neko").then((url) => {
     console.log(url); // https://neko-love.xyz/v1/neko/neko-love_314.png
-});
-
-Base("endpoint").then((url) => {
-    console.log(url); 
-    /*
-    [ 'neko',
-    'nekolewd',
-    'kitsune',
-    'pat',
-    'hug',
-    'waifu',
-    'cry',
-    'kiss',
-    'slap' ]
-    */
 });
 ```
 
@@ -60,6 +58,7 @@ Base("endpoint").then((url) => {
 | Function | Description |
 | -------- | ----------- |
 | `nekolewd` | Get a URL of a neko hentai image |
+
 
 [Full Neko Love API documentation](https://docs.neko-love.xyz/)
 
