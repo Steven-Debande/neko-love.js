@@ -24,8 +24,6 @@ async function test() {
   console.log(await Neko("neko")); // https://neko-love.xyz/v1/neko/neko-love_314.png
 }
 test();
-
-
 ```
 
 Promise example
