@@ -1,6 +1,7 @@
 ## Neko-Love.js
 Official module of the Neko-Love API
 
+[![npm](https://img.shields.io/npm/dt/neko-love.js.svg?maxAge=3600)](https://www.npmjs.com/package/neko-love.js)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/dc36a8e4e6b5476d914baadba9e36714)](https://www.codacy.com/manual/Steven-Debande/neko-love.js?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Steven-Debande/neko-love.js&amp;utm_campaign=Badge_Grade)
 
 ## Installation
