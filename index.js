@@ -6,9 +6,9 @@ const base = "https://neko-love.xyz/api/v1/";
 module.exports = async (endpoint) => {
     const url = new URL(endpoint === "endpoint" ? base : `${base}${endpoint}`);
     try {
-        return await getContext(url.toString(), endpoint === "endpoint" ? true : false);
+        await getContext(url.toString(), endpoint === "endpoint" ? true : false);
     } catch (error) {
-        return console.error(`Error ${error.message}`);
+        console.log(`Error ${error.message}`);
     }
 };
 
@@ -34,7 +34,7 @@ function getContext(url, type) {
                 }
             });
         }).on("error", (err) => {
-            reject(`Error ${error.message}`);
+            reject(`Error ${err.message}`);
         });
     });
 }
