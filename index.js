@@ -8,7 +8,7 @@ module.exports = async (endpoint) => {
         return console.log("Error endpoint invalid");
     }
     const type = endpoint === "endpoint" ? true : false;
-    const url = new URL(endpoint === "endpoint" ? base : `${base}${endpoint}`);
+    const url = new URL(type ? base : `${base}${endpoint}`);
     try {
         await getContext(url.toString(), type);
     } catch (error) {
