@@ -16,7 +16,7 @@ npm install neko-love.js --save
 
 ## Example
 
-Await/Async example
+Async/Await example
 ```js
 const Neko = require('neko-love.js');
 
