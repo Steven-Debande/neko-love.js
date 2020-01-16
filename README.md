@@ -24,6 +24,11 @@ async function test() {
   console.log(await Neko("neko")); // https://neko-love.xyz/v1/neko/neko-love_314.png
 }
 test();
+
+async function test() {
+  console.log(await Neko("endpoint")); // Returns the list of endpoints
+}
+test();
 ```
 
 Promise example
@@ -32,6 +37,10 @@ const Neko = require("neko-love.js");
 
 Neko("neko").then((url) => {
     console.log(url); // https://neko-love.xyz/v1/neko/neko-love_314.png
+});
+
+Neko("endpoint").then((url) => {
+    console.log(url); // Returns the list of endpoints
 });
 ```
 
