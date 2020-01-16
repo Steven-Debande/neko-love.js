@@ -50,6 +50,7 @@ Neko("neko").then((url) => {
 | `pat` | Get a URL of a pat image/gif |
 | `cry` | Get a URL of a cry image/gif |
 | `waifu` | Get a URL of a waifu image |
+| `smug` | Get a URL of a smug image |
 
 ### NSFW
 
