@@ -6,7 +6,7 @@
  
 [![NPM](https://nodei.co/npm/neko-love.js.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/neko-love.js/)
 
-[![wercker status](https://app.wercker.com/status/72ba5602909664a0f49996a10db25445/m/ "wercker status")](https://app.wercker.com/project/byKey/72ba5602909664a0f49996a10db25445)
+[![wercker status](https://app.wercker.com/status/72ba5602909664a0f49996a10db25445/m/ "Neko-love.js")](https://app.wercker.com/project/byKey/72ba5602909664a0f49996a10db25445)
 
 # Neko-love.JS
 Official module of the Neko-Love API
