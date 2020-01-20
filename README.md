@@ -1,7 +1,11 @@
 [![npm](https://img.shields.io/npm/v/neko-love.js.svg)](https://www.npmjs.com/package/neko-love.js)
 [![npm](https://img.shields.io/npm/dt/neko-love.js.svg?maxAge=3600)](https://www.npmjs.com/package/neko-love.js)
 [![npm](https://img.shields.io/npm/dm/neko-love.js.svg?label=dl)](https://www.npmjs.com/package/neko-love.js)
+
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 [![install size](https://packagephobia.now.sh/badge?p=neko-love.js)](https://packagephobia.now.sh/result?p=neko-love.js)
+
 [![wercker status](https://app.wercker.com/status/72ba5602909664a0f49996a10db25445/s/ "wercker status")](https://app.wercker.com/project/byKey/72ba5602909664a0f49996a10db25445)
 
  
