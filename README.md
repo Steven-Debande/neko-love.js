@@ -38,12 +38,12 @@ Promise example
 ```js
 const Neko = require("neko-love.js");
 
-Neko("neko").then((url) => {
-    console.log(url); // https://neko-love.xyz/v1/neko/neko-love_314.png
+Neko("neko").then((res) => {
+    console.log(res); // https://neko-love.xyz/v1/neko/neko-love_314.png
 });
 
-Neko("endpoint").then((url) => {
-    console.log(url); // Returns the list of endpoints
+Neko("endpoint").then((res) => {
+    console.log(res); // Returns the list of endpoints
 });
 ```
 
