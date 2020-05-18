@@ -63,6 +63,7 @@ Neko("endpoint").then((res) => {
 | `cry` | Get a URL of a cry image/gif |
 | `waifu` | Get a URL of a waifu image |
 | `smug` | Get a URL of a smug image |
+| `punch` | Get a URL of a punch image |
 
 ### NSFW
 
